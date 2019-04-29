@@ -2,6 +2,7 @@
 
 - use F1 to show/hide help, stats & settings screen
 - everything else is explained in help window
+- You may want to play with values in Settings.h and recompile to see the results (setting smaller cell size = more cells)
 
 ## Standalone use (important)
 
