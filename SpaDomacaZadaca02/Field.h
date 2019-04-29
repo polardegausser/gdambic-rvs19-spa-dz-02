@@ -1,7 +1,7 @@
 #pragma once
 
 #include "SFML.h"
-#include "Randomizer.h"
+#include "PRNG.h"
 
 class Field : public sf::Drawable
 	{

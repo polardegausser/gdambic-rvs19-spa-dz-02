@@ -35,7 +35,7 @@ App::App( unsigned int resX, unsigned int resY, unsigned int FPS, unsigned long 
 	initText( text_Randomize			, "R           =>      randomize the field"																		, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE *  8 ) ) );
 	initText( text_MouseClick			, "Mouse click =>        toggle cell state"																		, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE *  9 ) ) );
 	initText( text_Separator			, "---------------------------------------"																		, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE * 10 ) ) );
-	initText( text_AppState				, "State:            Paused"																					, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE * 11 ) ) );
+	initText( text_AppState				, "Current state:    paused"																					, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE * 11 ) ) );
 	initText( text_Generation			, "Generation:       " + std::to_string( field->GetGeneration() )												, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE * 12 ) ) );
 	initText( text_ExecutionDelay		, "Execution delay:  " + std::to_string( executionDelay ) + "ms"												, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE * 13 ) ) );
 	initText( text_RandomizerValue		, "Randomizer value: 1/" + std::to_string( field->GetRandomizerValue() ) + " (" + GetRandomizerValuePct() + "%)", sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE * 14 ) ) );
@@ -166,8 +166,8 @@ void App::Render()
 void App::TogglePause()
 	{
 	paused = !paused;
-	sf::String stateStr = paused ? "Paused" : "Running";
-	updateText( text_AppState, "State:            " + stateStr, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE * 11 ) ) );
+	sf::String stateStr = paused ? "paused" : "running";
+	updateText( text_AppState, "Current state:    " + stateStr, sf::Vector2f( rect_HelpBG.getPosition().x + ( TEXT_MARGIN * 2 ), rect_HelpBG.getPosition().y + TEXT_MARGIN + ( float ) ( FONT_SIZE * 11 ) ) );
 	}
 
 void App::RandomizeField()

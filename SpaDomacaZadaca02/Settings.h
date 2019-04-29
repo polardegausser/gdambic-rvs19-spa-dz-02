@@ -15,7 +15,7 @@ const float					CELL_GAP			= 4.f;
 const unsigned int			EXEC_DELAY_INIT		= 100;
 
 // Probability of getting more living cells per field -----------------------
-const unsigned long long	RANDOMIZER_VALUE	= 5ull;
+const unsigned long long	RANDOMIZER_VALUE	= 4ull;
 
 // UI colors ----------------------------------------------------------------
 const sf::Color				ALIVE_COLOR			= sf::Color(148, 0, 211);

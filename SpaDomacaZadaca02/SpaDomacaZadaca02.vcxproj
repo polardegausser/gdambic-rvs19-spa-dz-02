@@ -127,7 +127,7 @@
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="Field.h" />
-    <ClInclude Include="Randomizer.h" />
+    <ClInclude Include="PRNG.h" />
     <ClInclude Include="Resources.h" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="SFML.h" />
