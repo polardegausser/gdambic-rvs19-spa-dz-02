@@ -9,5 +9,5 @@
 
 ## Known bugs
 
-- when randomizing/clearing the field while simulation is running, sometimes field does not clear/fill completely (need to implement a flag to make sure whole array is erased/filled before executing next tick)
-- who knows :)
+1. when randomizing/clearing the field while simulation is running, sometimes field does not clear/fill completely (need to implement a flag to make sure whole array is erased/filled before executing next tick)
+2. who knows :)
